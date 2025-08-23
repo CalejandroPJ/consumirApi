@@ -1,0 +1,23 @@
+﻿@page "/"
+
+<PageTitle>Listado de usuarios</PageTitle>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>  
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var forecast in users)
+        {
+            <tr>
+                <td>@forecast.Nombre</td>
+                <td>@forecast.Edad</td>
+                <td>@forecast.Categoria</td>
+            </tr>
+        }
+    </tbody>
+</table>
